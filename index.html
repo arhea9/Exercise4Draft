@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Leaflet Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <style type="text/css">
+      body{
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script>
+      const map = L.map('map', {
+  center: [33.7756, -84.3963],
+  zoom:17
+});
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
+
+
+var marker = L.marker([33.7756, -84.3890],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 2</li><li>Time: 3:27 PM</li></ul><img src = "./images/AbigailImage1.jpg" style="width:250px">');
+
+var marker = L.marker([33.7738, -84.3962],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 3</li><li>Time: 12:24 PM</li></ul><img src = "./images/AnsleyImage1.jpg" style="width:250px">');
+
+var marker = L.marker([33.7772, -84.3979],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 4</li><li>Time: 2:09 PM</li></ul><img src = "./images/AnsleyImage2.jpg" style="width:250px">');
+
+var marker = L.marker([33.7768, -84.3976],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 4</li><li>Time: 2:09 PM</li></ul><img src = "./images/AnsleyImage3.jpg" style="width:250px">');
+
+var marker = L.marker([33.7772, -84.3976],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 7</li><li>Time: 2:10 PM</li></ul><img src = "./images/AnsleyImage4.jpg" style="width:250px">');
+
+var marker = L.marker([33.7767, -84.3902],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 2</li><li>Time: 6:03 PM</li></ul><img src = "./images/CaitlinImage1.jpg" style="width:250px">');
+
+var marker = L.marker([33.7767, -84.3901],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 2</li><li>Time: 6:04 PM</li></ul><img src = "./images/CaitlinImage2.jpg" style="width:250px">');
+
+var marker = L.marker([33.7767, -84.3899],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 3</li><li>Time: 6:17 PM</li></ul><img src = "./images/CaitlinImage3.jpg" style="width:250px">');
+
+var marker = L.marker([33.774, -84.3956],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 4</li><li>Time: 1:52 PM</li></ul><img src = "./images/GabeImage1.jpg" style="width:250px">');
+
+var marker = L.marker([33.774, -84.3960],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 9</li><li>Time: 1:56 PM</li></ul><img src = "./images/GabeImage2.jpg" style="width:250px">');
+
+var marker = L.marker([33.7738, -84.3966],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 2</li><li>Time: 1:57 PM</li></ul><img src = "./images/GabeImage3.jpg" style="width:250px">');
+
+var marker = L.marker([33.7738, -84.3964],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 2</li><li>Time: 1:57 PM</li></ul><img src = "./images/GabeImage4.jpg" style="width:250px">');
+
+var marker = L.marker([33.7739, -84.3992],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 11</li><li>Time: 3:00 PM</li></ul><img src = "./images/GabeImage5.jpg" style="width:250px">');
+
+var marker = L.marker([33.7741, -84.3992],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 3</li><li>Time: 3:00 PM</li></ul><img src = "./images/GabeImage6.jpg" style="width:250px">');
+
+var marker = L.marker([33.7743, -84.39665],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 3</li><li>Time: 1:56 PM</li></ul><img src = "./images/GabeImage7.jpg" style="width:250px">');
+
+var marker = L.marker([33.7773, -84.3976],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 12</li><li>Time: 1:57 PM</li></ul><img src = "./images/GabeImage8.jpg" style="width:250px">');
+
+var marker = L.marker([33.7741, -84.3963],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 15</li><li>Time: 1:57 PM</li></ul><img src = "./images/GabeImage9.jpg" style="width:250px">');
+
+var marker = L.marker([33.77726, -84.3976],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 14</li><li>Time: 6:30 PM</li></ul><img src = "./images/GabeImage10.jpg" style="width:250px">');
+
+var marker = L.marker([33.7736, -84.3992],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 3</li><li>Time: 3:00 PM</li></ul><img src = "./images/GabeImage11.jpg" style="width:250px">');
+
+var marker = L.marker([33.7753, -84.39715],{
+}).addTo(map).bindPopup('<ul><li>Number of scooters: 4</li><li>Time: 1:57 PM</li></ul><img src = "./images/GabeImage12.jpg" style="width:250px">');
+</script>
+  </body>
+</html>
